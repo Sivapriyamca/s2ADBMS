@@ -1,0 +1,28 @@
+
+SQL> create table EMP(emp_no number,e_name varchar(20));
+
+Table created.
+
+
+SQL> insert into EMP values(1,'sivapriya','20000');
+
+1 row created.
+
+SQL> insert into EMP values(2,'ardra','30000');
+
+1 row created.
+
+SQL> insert into EMP values(3,'meera','40000');
+
+1 row created.
+
+SQL> select * from EMP;
+
+    EMP_NO E_NAME                   SALARY
+---------- -------------------- ----------
+         1 sivapriya
+         1 sivapriya                 20000
+         2 ardra                     30000
+         3 meera                     40000
+
+SQL>

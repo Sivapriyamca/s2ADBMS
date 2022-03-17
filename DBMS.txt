@@ -1,0 +1,71 @@
+SQL> CREATE TABLE STUDENT(roll_no int NOT NULL,firstname VARCHAR(20),lastname VARCHAR(20),DOB date,gender VARCHAR(20));
+
+Table created.
+
+SQL> select * from STUDENT;
+
+no rows selected
+
+SQL> desc STUDENT;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ROLL_NO                                   NOT NULL NUMBER(38)
+ FIRSTNAME                                          VARCHAR2(20)
+ LASTNAME                                           VARCHAR2(20)
+ DOB                                                DATE
+ GENDER                                             VARCHAR2(20)
+
+
+SQL> INSERT INTO STUDENT VALUES('041','sivapriya','rajan','17-december-2000','female');
+
+1 row created.
+
+SQL> SELECT * FROM STUDENT;
+
+   ROLL_NO FIRSTNAME            LASTNAME             DOB  
+---------- ----------------- -------------------- ---------
+GENDER
+--------------------
+        41 sivapriya            rajan                17-DEC-00
+female
+
+
+SQL> INSERT INTO STUDENT VALUES('008','ardra','pdas','17-july-2000','female');
+
+1 row created.
+
+SQL> INSERT INTO STUDENT VALUES('045','meera','s','25-october-2000','female');
+
+1 row created.
+
+
+
+SQL> INSERT INTO STUDENT VALUES('005','anjali','anish','3-april-2000','female');
+
+1 row created.
+
+SQL> SELECT * FROM STUDENT;
+
+   ROLL_NO FIRSTNAME            LASTNAME             DOB
+---------- -------------------- -------------------- ---------
+GENDER
+--------------------
+        41 sivapriya            rajan                17-DEC-00
+female
+
+         8 ardra                pdas                 17-JUL-00
+female
+
+        45 meera                s                    25-OCT-00
+female
+
+
+   ROLL_NO FIRSTNAME            LASTNAME             DOB
+---------- -------------------- -------------------- ---------
+GENDER
+--------------------
+         5 anjali               anish                03-APR-00
+female
+
+
+SQL>
